@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+  background-image: url(../shared/logo.svg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 260px) {
+  .wrapper {
+    text-align: center;
+    margin: 24px;
+  }
+
+  .row {
+    margin: 64px 0;
+  }
+
+  h1 {
+    color: #162542;
+    font-family: Barlow;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 100% */
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #162542;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; /* 112.5% */
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: #162542;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px; /* 116.667% */
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #7b8bad;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+  }
+
+  .keyboard {
+    border-radius: 20px;
+    background: #d8d8d8;
+    background-image: url(../mobile/image-keyboard.jpg);
+    width: 372px;
+    height: 331px;
+    flex-shrink: 0;
+
+    margin-bottom: 20px;
+  }
+
+  .other-keyboards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .keyboard-orange {
+    width: 129px;
+    height: 193px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #f16718;
+
+    opacity: 0.7486;
+    background: url(../mobile/image-phone-and-keyboard.jpg),
+      lightgray 0px 0px / 100% 100% no-repeat;
+    mix-blend-mode: multiply;
+  }
+
+  .keyboard-mouse {
+    width: 220px;
+    height: 193px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #d8d8d8;
+
+    background: url(../mobile/image-glass-and-keyboard.jpg),
+      lightgray 0px 0px / 100% 100% no-repeat;
+  }
+}
