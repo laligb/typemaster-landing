@@ -15,19 +15,108 @@ header {
   justify-content: space-between;
 }
 
+.tv {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+
+  background-image: url(../shared/icon-tv.svg);
+}
+
+.bluetooth {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+
+  background-image: url(../shared/icon-bluetooth.svg);
+}
+
+.battery {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+
+  background-image: url(../shared/icon-battery.svg);
+}
+
+.light {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+
+  background-image: url(../shared/icon-light.svg);
+}
 @media screen and (min-width: 260px) {
   .wrapper {
     text-align: center;
     margin: 24px;
   }
 
+  header button {
+    color: #162542;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    text-transform: uppercase;
+
+    padding: 11px;
+  }
+
   .row {
     margin: 64px 0;
   }
 
+  .row:nth-child(1) p,
   h1 {
-    color: #162542;
+    text-align: left;
+  }
+
+  .row:nth-child(1) p {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .order {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order button {
+    color: #fff;
     font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    text-transform: uppercase;
+
+    width: 150px;
+    height: 48px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #f16718;
+    border: none;
+  }
+
+  .order h5 {
+    color: #7b8bad;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    text-transform: uppercase;
+
+    margin: auto;
+  }
+
+  h1 {
+    width: 327px;
+    color: #162542;
+    font-family: "Barlow";
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
@@ -108,5 +197,16 @@ header {
 
     background: url(../mobile/image-glass-and-keyboard.jpg),
       lightgray 0px 0px / 100% 100% no-repeat;
+  }
+
+  .tv,
+  .battery,
+  .light,
+  .bluetooth {
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 96px;
   }
 }
