@@ -157,14 +157,19 @@ header {
   }
 
   .keyboard {
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     background: #d8d8d8;
     background-image: url(../mobile/image-keyboard.jpg);
-    width: 372px;
+
     height: 331px;
     flex-shrink: 0;
 
     margin-bottom: 20px;
+    width: 100%;
+    margin-left: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .other-keyboards {
@@ -179,12 +184,14 @@ header {
     flex-shrink: 0;
 
     border-radius: 20px;
-    background: #f16718;
 
     opacity: 0.7486;
     background: url(../mobile/image-phone-and-keyboard.jpg),
       lightgray 0px 0px / 100% 100% no-repeat;
     mix-blend-mode: multiply;
+
+    background-size: cover;
+    margin-left: -40px;
   }
 
   .keyboard-mouse {
@@ -197,6 +204,7 @@ header {
 
     background: url(../mobile/image-glass-and-keyboard.jpg),
       lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: cover;
   }
 
   .tv,
