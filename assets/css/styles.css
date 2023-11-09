@@ -3,6 +3,18 @@
   box-sizing: border-box;
   padding: 0;
 }
+@font-face {
+  font-family: "Barlow";
+
+  src: local("Barlow"),
+    url("../fonts/Barlow/Barlow-Black.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-Bold.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-Medium.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-Light.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-ExtraBold.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-Regular.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-SemiBold.ttf") format("opentype");
+}
 
 #logo {
   width: 40px;
@@ -13,6 +25,10 @@
 header {
   display: flex;
   justify-content: space-between;
+}
+
+button {
+  padding: 5px;
 }
 
 .tv {
@@ -60,6 +76,10 @@ header {
     font-weight: 700;
     line-height: 26px; /* 162.5% */
     text-transform: uppercase;
+
+    border-radius: 8px;
+    background: #e8eff2;
+    border: none;
 
     padding: 11px;
   }
@@ -192,6 +212,19 @@ header {
 
     background-size: cover;
     margin-left: -40px;
+    position: relative;
+  }
+
+  .keyboard-orange::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(241, 103, 24, 0.75);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
   }
 
   .keyboard-mouse {
