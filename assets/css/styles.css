@@ -259,8 +259,8 @@ button {
   }
 
   .keyboard {
-    visibility: hidden;
-    visibility: collapse;
+    width: 0;
+    height: 0;
   }
 
   .container .row:nth-child(1) {
@@ -285,5 +285,21 @@ button {
 
   .tablet {
     padding: 40px 0;
+  }
+
+  .keyboard-orange {
+    margin: auto;
+    height: 554px;
+  }
+
+  .keyboard-mouse {
+    background-image: url(../tablet/image-glass-and-keyboard.jpg);
+    background-size: cover;
+    width: 80%;
+    background-position: center;
+    object-fit: cover;
+
+    margin: auto;
+    height: 554px;
   }
 }
