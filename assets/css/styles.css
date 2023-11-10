@@ -62,6 +62,19 @@ button {
 
   background-image: url(../shared/icon-light.svg);
 }
+
+.keyboard-orange::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(241, 103, 24, 0.75);
+  filter: saturate(1.8);
+  mix-blend-mode: multiply;
+  border-radius: 20px;
+}
 @media screen and (min-width: 260px) {
   .wrapper {
     text-align: center;
@@ -215,18 +228,6 @@ button {
     position: relative;
   }
 
-  .keyboard-orange::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(241, 103, 24, 0.75);
-    mix-blend-mode: multiply;
-    border-radius: 20px;
-  }
-
   .keyboard-mouse {
     width: 220px;
     height: 193px;
@@ -249,5 +250,40 @@ button {
 
   footer {
     margin-top: 96px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .keyboard {
+    visibility: hidden;
+    visibility: collapse;
+  }
+
+  .container .row:nth-child(1) {
+    display: flex;
+    justify-content: space-evenly;
+
+    overflow-x: hidden;
+  }
+
+  .keyboard-tablet {
+    background-image: url(../tablet/image-keyboard.jpg);
+    width: 100%;
+    max-height: fit-content;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+    position: relative;
+    left: 20%;
+  }
+
+  .tablet {
+    padding: 40px 0;
   }
 }
