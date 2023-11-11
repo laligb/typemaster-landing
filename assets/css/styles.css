@@ -256,11 +256,11 @@ button {
 @media screen and (min-width: 500px) {
   .wrapper {
     width: 100%;
+    margin-right: 24px;
   }
 
   .keyboard {
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .container .row:nth-child(1) {
@@ -289,17 +289,55 @@ button {
 
   .keyboard-orange {
     margin: auto;
-    height: 554px;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    object-fit: cover;
+
+    background-image: url(../tablet/image-phone-and-keyboard.jpg);
   }
 
   .keyboard-mouse {
     background-image: url(../tablet/image-glass-and-keyboard.jpg);
     background-size: cover;
-    width: 80%;
+    width: 60%;
     background-position: center;
     object-fit: cover;
 
     margin: auto;
-    height: 554px;
+  }
+
+  .row:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .row:nth-child(3) p {
+    text-align: justify;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .tv,
+  .bluetooth,
+  .battery,
+  .light {
+    margin: 0;
+  }
+
+  .cards .row h3,
+  p {
+    text-align: start;
+  }
+
+  footer p {
+    text-align: center;
+  }
+  footer {
+    margin-bottom: 20px;
+    margin-top: 0;
   }
 }
