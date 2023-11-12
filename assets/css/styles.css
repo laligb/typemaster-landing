@@ -389,6 +389,15 @@ p {
     margin-bottom: 142px;
   }
 
+  .mechanical {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mechanical h2 {
+    padding: 0 10% 0 3%;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(2, auto);
