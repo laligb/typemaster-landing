@@ -546,9 +546,8 @@ p {
     border-radius: 20px;
   }
 
-  .other-keyboards .square {
+  .row:nth-child(3) .square {
     left: -40px;
-    bottom: -220px;
   }
 
   .row:nth-child(3) {
