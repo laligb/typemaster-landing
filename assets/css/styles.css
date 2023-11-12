@@ -307,11 +307,13 @@ p {
   .keyboard-tablet {
     background-image: url(../tablet/image-keyboard.jpg);
     width: 100%;
-    max-height: fit-content;
+    max-height: max-content;
     background-size: cover;
 
     background-repeat: no-repeat;
     border-radius: 20px;
+
+    margin-bottom: 39px;
 
     position: relative;
     left: 5%;
@@ -323,6 +325,103 @@ p {
 
   .tablet p {
     padding: 39px 0;
+  }
+
+  .order {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .other-keyboards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .keyboard-orange {
+    /* margin: auto; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+
+    min-width: 250px;
+    min-height: 100px;
+
+    object-fit: cover;
+
+    background-image: url(../tablet/image-phone-and-keyboard.jpg);
+  }
+
+  .keyboard-mouse {
+    background-image: url(../tablet/image-glass-and-keyboard.jpg);
+    background-size: cover;
+    min-width: 400px;
+    min-height: 400px;
+
+    background-position: center;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    /* margin: auto; */
+  }
+
+  .keyboard-orange {
+    position: relative;
+  }
+
+  .keyboard-orange::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(241, 103, 24, 0.75);
+    filter: saturate(1.8);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+  }
+
+  .mechanical {
+    margin-top: 72px;
+    margin-bottom: 142px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .card .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card {
+    padding: 7%;
+  }
+
+  .card .row {
+    margin-bottom: 10%;
+  }
+
+  .row h3 {
+    max-width: 70%;
+    margin-bottom: 10%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  footer {
+    margin: 39px;
   }
 
   /*
@@ -496,15 +595,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
   }
-
-  footer {
-    flex: none;
-    margin-top: 128px;
-    text-align: center;
-  }
-
-  p {
-    font-weight: 200;
+  .card {
+    padding: 10%;
   }
 
   .card .row {
@@ -520,8 +612,8 @@ p {
     padding: 10% 0;
   }
 
-  .card {
-    padding: 10%;
+  p {
+    font-weight: 200;
   }
 
   .row h3 {
@@ -537,5 +629,11 @@ p {
 
   .tablet {
     max-width: 40%;
+  }
+
+  footer {
+    flex: none;
+    margin-top: 128px;
+    text-align: center;
   }
 }
