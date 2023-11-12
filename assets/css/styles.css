@@ -315,6 +315,7 @@ p {
     border-radius: 20px;
 
     margin-bottom: 39px;
+    margin-left: 25px;
   }
 
   .tablet {
@@ -533,6 +534,21 @@ p {
     background-size: cover;
     background-position: center;
     border-radius: 20px;
+  }
+
+  .square {
+    width: 150px;
+    height: 300px;
+    background-color: #e8eff2;
+    position: absolute;
+    right: -50px;
+    overflow-x: hidden;
+    border-radius: 20px;
+  }
+
+  .other-keyboards .square {
+    left: -40px;
+    bottom: -220px;
   }
 
   .row:nth-child(3) {
