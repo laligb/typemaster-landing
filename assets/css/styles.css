@@ -13,7 +13,9 @@
     url("../fonts/Barlow/Barlow-Light.ttf") format("opentype"),
     url("../fonts/Barlow/Barlow-ExtraBold.ttf") format("opentype"),
     url("../fonts/Barlow/Barlow-Regular.ttf") format("opentype"),
-    url("../fonts/Barlow/Barlow-SemiBold.ttf") format("opentype");
+    url("../fonts/Barlow/Barlow-SemiBold.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-ExtraLight.ttf") format("opentype"),
+    url("../fonts/Barlow/Barlow-Thin.ttf") format("opentype");
 }
 
 #logo {
@@ -63,7 +65,7 @@ button {
   background-image: url(../shared/icon-light.svg);
 }
 
-.keyboard-orange::after {
+/* .keyboard-orange::after {
   content: "";
   position: absolute;
   top: 0;
@@ -74,31 +76,113 @@ button {
   filter: saturate(1.8);
   mix-blend-mode: multiply;
   border-radius: 20px;
+} */
+
+.order button {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+
+  width: 150px;
+  height: 48px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #f16718;
+  border: none;
 }
-@media screen and (min-width: 260px) {
+
+header button {
+  color: #162542;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+
+  border-radius: 8px;
+  background: #e8eff2;
+  border: none;
+
+  padding: 11px;
+}
+
+h1 {
+  width: 327px;
+  color: #162542;
+  font-family: "Barlow";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 100% */
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #162542;
+
+  font-family: Barlow;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #162542;
+
+  font-family: Barlow;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px; /* 116.667% */
+  text-transform: uppercase;
+}
+
+p {
+  color: #7b8bad;
+
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+
+.order h5 {
+  color: #7b8bad;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+}
+/* MOBILIE */
+@media screen and (min-width: 260px) and (max-width: 499px) {
   .wrapper {
     text-align: center;
     margin: 24px;
   }
 
-  header button {
-    color: #162542;
-    font-family: Barlow;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px; /* 162.5% */
-    text-transform: uppercase;
-
-    border-radius: 8px;
-    background: #e8eff2;
-    border: none;
-
-    padding: 11px;
-  }
-
   .row {
     margin: 64px 0;
+  }
+
+  .order h5 {
+    margin: auto;
+  }
+
+  h2,
+  h3,
+  p {
+    text-align: center;
   }
 
   .row:nth-child(1) p,
@@ -114,79 +198,6 @@ button {
   .order {
     display: flex;
     justify-content: space-between;
-  }
-
-  .order button {
-    color: #fff;
-    font-family: Barlow;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px; /* 162.5% */
-    text-transform: uppercase;
-
-    width: 150px;
-    height: 48px;
-    flex-shrink: 0;
-
-    border-radius: 8px;
-    background: #f16718;
-    border: none;
-  }
-
-  .order h5 {
-    color: #7b8bad;
-    font-family: Barlow;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px; /* 162.5% */
-    text-transform: uppercase;
-
-    margin: auto;
-  }
-
-  h1 {
-    width: 327px;
-    color: #162542;
-    font-family: "Barlow";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 48px; /* 100% */
-    text-transform: uppercase;
-  }
-
-  h2 {
-    color: #162542;
-    text-align: center;
-    font-family: Barlow;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 36px; /* 112.5% */
-    text-transform: uppercase;
-  }
-
-  h3 {
-    color: #162542;
-    text-align: center;
-    font-family: Barlow;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 28px; /* 116.667% */
-    text-transform: uppercase;
-  }
-
-  p {
-    color: #7b8bad;
-    text-align: center;
-    font-family: Barlow;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 162.5% */
   }
 
   .keyboard {
@@ -228,6 +239,19 @@ button {
     position: relative;
   }
 
+  .keyboard-orange::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(241, 103, 24, 0.75);
+    filter: saturate(1.8);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+  }
+
   .keyboard-mouse {
     width: 220px;
     height: 193px;
@@ -253,7 +277,8 @@ button {
   }
 }
 
-@media screen and (min-width: 500px) {
+/* TABLET */
+@media screen and (min-width: 500px) and (max-width: 1439px) {
   .wrapper {
     width: 100%;
     margin-right: 24px;
@@ -339,5 +364,135 @@ button {
   footer {
     margin-bottom: 20px;
     margin-top: 0;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .body {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .wrapper {
+    margin: 64px 140px;
+  }
+
+  header {
+    margin-bottom: 83px;
+  }
+
+  .gray-square {
+    max-width: 255px;
+    max-height: 255px;
+    background-color: #e8eff2;
+  }
+
+  .row:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .keyboard-tablet {
+    display: none;
+  }
+
+  .tablet {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .keyboard-desktop {
+    background-image: url(../desktop/image-keyboard.jpg);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+
+  .row:nth-child(3) {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .orange {
+    background-image: url(../desktop/image-phone-and-keyboard.jpg);
+    min-width: 255px;
+    min-height: 480px;
+    max-height: 680px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+
+  .mouse {
+    background-image: url(../desktop/image-glass-and-keyboard.jpg);
+    min-width: 445px;
+    max-height: 680px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+
+  .mechanical {
+    margin: auto;
+    padding: 100px;
+  }
+
+  .mechanical h2 {
+    margin-bottom: 10px;
+  }
+
+  .cards {
+    margin-top: 168px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+
+  .card {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  }
+
+  .card .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer {
+    flex: none;
+    margin-top: 128px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 200;
+  }
+
+  .card .row {
+    margin-bottom: 10%;
+  }
+
+  .card .row h2 {
+    margin-bottom: 20px;
+  }
+
+  .row p {
+    text-align: start;
+    padding: 10% 0;
+  }
+
+  .card {
+    padding: 10%;
   }
 }
