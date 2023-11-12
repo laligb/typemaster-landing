@@ -29,8 +29,17 @@ header {
   justify-content: space-between;
 }
 
+header button:hover {
+  background: #162542;
+  color: white;
+}
+
 button {
   padding: 5px;
+}
+
+.order button:hover {
+  background: #ff9b62;
 }
 
 .tv {
@@ -280,12 +289,8 @@ p {
 /* TABLET */
 @media screen and (min-width: 500px) and (max-width: 1439px) {
   .wrapper {
-    width: 100%;
-    margin-right: 24px;
-  }
-
-  .keyboard {
-    display: none;
+    /* width: 100%; */
+    margin: 39px;
   }
 
   .container .row:nth-child(1) {
@@ -293,6 +298,10 @@ p {
     justify-content: space-evenly;
 
     overflow-x: hidden;
+  }
+
+  header {
+    margin-bottom: 62px;
   }
 
   .keyboard-tablet {
@@ -305,18 +314,25 @@ p {
     border-radius: 20px;
 
     position: relative;
-    left: 20%;
+    left: 5%;
   }
 
   .tablet {
     padding: 40px 0;
   }
 
+  .tablet p {
+    padding: 39px 0;
+  }
+
+  /*
+
+
   .keyboard-orange {
     margin: auto;
     background-size: cover;
     background-position: center;
-    width: 250px;
+
     object-fit: cover;
 
     background-image: url(../tablet/image-phone-and-keyboard.jpg);
@@ -364,7 +380,7 @@ p {
   footer {
     margin-bottom: 20px;
     margin-top: 0;
-  }
+  }*/
 }
 
 /* DESKTOP */
@@ -401,23 +417,23 @@ p {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .keyboard-desktop {
     background-image: url(../desktop/image-keyboard.jpg);
-    width: 500px;
-    height: 400px;
+    width: 700px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
   }
 
   .row:nth-child(3) {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
   }
 
   .orange {
@@ -427,6 +443,20 @@ p {
     max-height: 680px;
     background-size: cover;
     background-position: center;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .orange::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(241, 103, 24, 0.75);
+    filter: saturate(1.8);
+    mix-blend-mode: multiply;
     border-radius: 20px;
   }
 
@@ -458,9 +488,7 @@ p {
   }
 
   .card {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    height: 100%;
   }
 
   .card .row {
@@ -494,5 +522,20 @@ p {
 
   .card {
     padding: 10%;
+  }
+
+  .row h3 {
+    max-width: 80%;
+  }
+
+  .order {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .tablet {
+    max-width: 40%;
   }
 }
