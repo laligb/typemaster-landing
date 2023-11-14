@@ -547,7 +547,8 @@ p {
   }
 
   .row:nth-child(3) .square {
-    left: -40px;
+    left: -160px;
+    bottom: 0;
   }
 
   .row:nth-child(3) {
@@ -555,6 +556,8 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
+    position: relative;
   }
 
   .orange {
