@@ -290,7 +290,7 @@ p {
 @media screen and (min-width: 500px) and (max-width: 1439px) {
   .wrapper {
     /* width: 100%; */
-    margin: 39px;
+    /* margin: 39px; */
     position: relative;
   }
 
@@ -303,6 +303,7 @@ p {
 
   header {
     margin-bottom: 62px;
+    margin: 39px;
   }
 
   .keyboard-tablet {
@@ -312,14 +313,15 @@ p {
     background-size: cover;
 
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
 
     margin-bottom: 39px;
-    margin-left: 25px;
+    margin-left: 50px;
   }
 
   .tablet {
     padding: 40px 0;
+    margin-left: 39px;
   }
 
   .tablet p {
@@ -336,6 +338,7 @@ p {
   .other-keyboards {
     display: flex;
     justify-content: space-between;
+    margin: 0 39px;
   }
 
   .keyboard-orange {
@@ -349,6 +352,10 @@ p {
     min-height: 200px;
 
     background-image: url(../tablet/image-phone-and-keyboard.jpg);
+  }
+
+  .margins {
+    margin: 0 39px;
   }
 
   .keyboard-mouse {
